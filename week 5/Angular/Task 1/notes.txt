@@ -1,0 +1,38 @@
+Hands-On 1 - Task 1
+
+
+1. angular.json
+Stores the Angular project configuration, including build, serve, assets, styles, scripts, and project settings.
+
+2. tsconfig.json
+The main TypeScript configuration file that defines compiler options for the entire project.
+
+3. tsconfig.app.json
+Contains TypeScript compiler settings specifically for the Angular application source files.
+
+4. package.json
+Stores project information, dependencies, development dependencies, and npm scripts used to build and run the application.
+
+5. src/main.ts
+The entry point of the Angular application. It bootstraps the root application configuration and starts the application.
+
+6. src/app/app.config.ts
+Contains the application's configuration such as routing, providers, and other global settings for standalone Angular applications.
+
+7. src/app/app.ts
+Defines the root App component. It contains the component metadata and controls the main view of the application.
+
+8. src/index.html
+The main HTML page of the application. It contains the <app-root> element where the Angular application is loaded.
+
+9. dist/ folder
+Created after running ng build. It contains the production-ready compiled application files.
+
+10. main.js
+The compiled JavaScript bundle containing the application's code.
+
+11. maximumWarning
+Specifies the bundle size limit at which Angular displays a warning during production builds.
+
+12. maximumError
+Specifies the bundle size limit at which Angular stops the build with an error if exceeded.
