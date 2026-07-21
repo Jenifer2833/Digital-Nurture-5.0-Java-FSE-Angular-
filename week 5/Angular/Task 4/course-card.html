@@ -1,0 +1,22 @@
+<div
+  class="card"
+  appHighlight="lightpink"
+  [ngClass]="cardClasses"
+  [ngStyle]="{'border-left':'6px solid ' + borderColor}">
+
+  <h3>{{ course.name }}</h3>
+
+  <p>ID: {{ course.id }}</p>
+  <p>Code: {{ course.code }}</p>
+  <p>Credits: {{ course.credits | creditLabel}}</p>
+  <p>Status: {{ course.gradeStatus }}</p>
+
+  <button (click)="enrollRequested.emit(course.id); isEnrolled = true">
+    Enroll
+  </button>
+
+  <button (click)="toggleDetails()">
+    Show Details
+  </button>
+
+</div>
